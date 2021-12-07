@@ -40,7 +40,7 @@ namespace FavoriteReddRoom
             string text = File.ReadAllText(fileName);
 
             //Checks to see if the line is actually there in configs.
-            if (text.Contains("172.93.100.104:7783"))
+            if (text.Contains("51.222.244.9:7777"))
             {
                 AlreadyFavorited();
             }
@@ -48,7 +48,7 @@ namespace FavoriteReddRoom
             {
                 string DoesNotContain = "The server is not already favorited, continuing.";
                 Console.WriteLine(DoesNotContain);
-                string WriteLine = "\n172.93.100.104:7783\n172.93.100.104:7784\n172.93.100.104:7785";
+                string WriteLine = "\n51.222.244.9:7777\n51.222.244.9:7778";
                 System.IO.File.AppendAllText(fileName, WriteLine);
                 Favorited();
             }
